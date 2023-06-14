@@ -8,8 +8,8 @@ const serverless = require('serverless-http');
 
 const app = express();
 
-require("./auth/strategies/google.strategy");
-require("./auth/strategies/facebook.strategy");
+require("../../auth/strategies/google.strategy");
+require("../../auth/strategies/facebook.strategy");
 
 app.use(cors());
 app.use(passport.initialize());
