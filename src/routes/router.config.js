@@ -5,7 +5,7 @@ const express = require('express')
 
 function apiRoutes(app) {
     const router = express.Router();
-    app.use('/.netlify/functions/api', router);
+    app.use('/api', router);
     router.use('/auth', authRouter);
     router.use('/', appRoutes);
 
